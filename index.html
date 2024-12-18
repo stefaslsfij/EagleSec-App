@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EagleSec App</title>
+  <link rel="stylesheet" href="style.css"> <!-- Linking to external CSS file -->
+  <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-firestore.js"></script>
+  <script src="firebase-config.js"></script> <!-- Firebase Config -->
+</head>
+<body>
+  <div class="container">
+    <h1>Welcome to EagleSec App</h1>
+
+    <div id="authSection">
+      <button id="signUpBtn">Sign Up</button>
+      <button id="loginBtn">Login</button>
+    </div>
+
+    <div id="userDashboard" style="display: none;">
+      <h2>User Dashboard</h2>
+      <img id="profilePic" src="assets/profile-pic.jpg" alt="Profile Picture">
+      <h3>Welcome, <span id="username"></span></h3>
+      <button id="logoutBtn">Log Out</button>
+    </div>
+
+    <div id="googleLoginBtn" style="display: none;">
+      <button>Login with Google</button>
+    </div>
+
+    <div id="outlookLoginBtn" style="display: none;">
+      <button>Login with Outlook</button>
+    </div>
+
+  </div>
+
+  <script src="app.js"></script> <!-- Linking to external JavaScript file -->
+</body>
+</html>
